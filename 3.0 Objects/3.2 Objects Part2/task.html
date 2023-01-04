@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>In this lesson, we learned about more complex object details. In this task, you need to design two object
+        templates for the following Object:
+
+        Using the Class and Object constructor, create a new method birth() which returns the year of the dog’s birth.
+    </p>
+    <script>
+        const dog = {
+            name: "Rex",
+            age: 5,
+            bark: function () {
+                console.log("Bark bark!")
+            },
+        };
+
+        // Class constructor - blueprint
+        class Dog {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            bark() {
+                console.log("Class dog is Bark barkT!")
+            }
+            birth() {
+                let today = new Date()
+                return today.getFullYear() - this.age;
+            }
+
+        }
+        //Object constructor - fisical creation
+        function objDog(name, age) {
+            this.name = name;
+            this.age = age;
+            this.bark = function () {
+                console.log("Obj dog is Bark bark!")
+            }
+            this.birth = function () {
+                let today = new Date()
+                return today.getFullYear() - this.age;
+            }
+        }
+
+        //implementations of class constructor
+        const classDog = new Dog("Rex", 50);
+        classDog.bark();
+        console.log("classDog birth year: " + classDog.birth())
+        //implementations of class constructor
+        const MyDog = new objDog("Rexa", 70);
+        MyDog.bark();
+        console.log("objDogbirth year: " + MyDog.birth())
+    </script>
+</body>
+
+</html>

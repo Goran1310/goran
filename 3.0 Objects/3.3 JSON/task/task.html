@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="json2xml.js"></script>
+    <script type="text/javascript" src="xml2json.js"></script>
+
+
+</head>
+
+<body>
+    <p>
+        In this lesson, we learned about standard JSON basics. You must create a JSON based on the JavaScript object in
+        this task.
+        {
+        name: 'John',
+        age: 30,
+        car: null
+        }
+        Display the JSON in the console.
+        Convert the JSON to the XML using the json2xml() method in the jsonxml library and display it in the console.
+    </p>
+    <script>
+        const JavaScriptObject = { name: 'John', age: 30, car: null }
+        // Create JSON object
+        const jsonData = { "name": "John", "age": 30, "car": null };
+        // Print JSON object to console
+        console.log("JSON data: " + JSON.stringify(jsonData));
+        // Convert JSON to XML
+        let xmlData = json2xml(jsonData)
+        console.log(xmlData);
+        // Convert XML to JSON
+        let jsonData1 = xml2json(xmlData)
+        console.log(jsonData1);
+
+    </script>
+</body>
+
+</html>

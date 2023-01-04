@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const json = '{"result":true, "count":42}';
+        const obj = JSON.parse(json);
+        console.log(obj.count);
+        // expected output: 42
+        console.log(obj.result);
+        // expected output: true
+        console.log(JSON.stringify({ x: 5, y: 6, z: 7 }));
+        // expected output: "{"x":5,"y":6}"
+        console.log(JSON.stringify([new Number(3), new String('false'), new Boolean(false)]));
+        // expected output: "[3,"false",false]"
+        console.log(JSON.stringify({ x: [10, undefined, function () { }, Symbol('')] }));
+        // expected output: "{"x":[10l,null,null,null]}"
+        console.log(JSON.stringify(new Date(2006, 0, 2, 15, 4, 5)));
+        // expected output: ""2006-01-02T15:04:05.000Z""
+
+        console.log(JSON.parse("{}")); // {}
+        console.log(JSON.parse("true")); // true
+        console.log(JSON.parse('"foo"')); // "foo"
+        console.log(JSON.parse('[1, 5, "false"]')); // [1, 5, "false"]
+        console.log(JSON.parse("null")); // null
+
+    </script>
+</body>
+
+</html>
