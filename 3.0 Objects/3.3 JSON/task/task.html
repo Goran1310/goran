@@ -27,7 +27,7 @@
     <script>
         const JavaScriptObject = { name: 'John', age: 30, car: null }
         // Create JSON object
-        const jsonData = { "name": "John", "age": 30, "car": null };
+        const jsonData = { "name": "John", "age": 30, "car": null }
         // Print JSON object to console
         console.log("JSON data: " + JSON.stringify(jsonData));
         // Convert JSON to XML
@@ -35,7 +35,7 @@
         console.log(xmlData);
         // Convert XML to JSON
         let jsonData1 = xml2json(xmlData)
-        console.log(jsonData1);
+        console.log("XML data: " + JSON.parse(jsonData1));
 
     </script>
 </body>
