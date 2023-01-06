@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="jquery-3.6.0.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.Convert the following object to a JSON. 
+        // 2.Display it in the console with proper indents.
+        // 3.Convert it back to the JavaScript object and
+        // 4.display it in the console.
+
+        // Syntax  JSON.stringify(value, replacer, space)
+        const objJavaScript = {
+            title: "Harry Potter",
+            releaseYear: 1997,
+            author: "J.K. Rowling"
+        };
+        const serialized = JSON.stringify(objJavaScript, null, 13)
+        console.log(serialized);
+        const deserializing = JSON.parse(serialized)
+        console.log(deserializing)
+    </script>
+</body>
+
+</html>

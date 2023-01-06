@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="xml2json.js"></script>
+    <script type="text/javascript" src="json2xml.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const jsObject = {
+            name: 'John',
+            age: 30,
+            car: null
+        }
+        const jsonData = { "name": "John", "age": 30, "car": null }
+        // Print JSON object to console
+        const json = JSON.stringify(jsObject, null, 13);
+        console.log(json)
+        // Print JSON object to console
+        console.log("JSON data: " + JSON.stringify(jsObject));
+        // Convert the JSON to the XML using the json2xml() method
+        let xmlData = json2xml(jsonData)
+        console.log(xmlData);
+
+    </script>
+</body>
+
+</html>
+<!-- 1.Display the JSON in the console.
+2.Convert the JSON to the XML using the json2xml() method  -->
+<!-- in the jsonxml library and display it in the console. -->
+<!-- https://www.linkedin.com/learning/json-essential-training/convert-between-json-and-other-data-formats?autoplay=true&resume=false&u=43268076 -->

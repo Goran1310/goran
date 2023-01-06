@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Check the number of properties in the following objects:
+        const o1 = new Date();
+        const o2 = new String();
+        const o3 = new Number();
+        const o4 = {};
+        // Check which of these are empty objects.
+        // console.log(jQuery.isEmptyObject(o1));
+        // console.log(jQuery.isEmptyObject(o2));
+        // console.log(jQuery.isEmptyObject(o3));
+        // console.log(jQuery.isEmptyObject(o4));
+
+        // console.log(o1)
+        // console.log(o2)
+        // console.log(o3)
+        // console.log(o4)
+        // function isEmptyObject(obj) {
+        //     console.log(JSON.stringify(o1) === '{}')
+        //     console.log(JSON.stringify(o2) === '{}')
+        //     console.log(JSON.stringify(o3) === '{}')
+        //     console.log(JSON.stringify(o4) === '{}')
+        // }
+        // isEmptyObject()
+        const dataTest = (data) => {
+            console.log("Number of properties:" + Object.keys(data))
+            if (Object.keys(data).length === 0 && data.constructor === Object) {
+                console.log("Empty")
+                return data
+            } else {
+                console.log("Not empty Object")
+                return data
+            }
+        }
+        for (data of [o1, o2, o3, o4]) {
+            dataTest(data)
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- https://builtin.com/software-engineering-perspectives/javascript-check-if-object-is-empty -->

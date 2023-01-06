@@ -14,3 +14,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 Syntax
 JSON.parse(text)
 JSON.parse(text, reviver)
+
+Schema validators. https://www.jsonschemavalidator.net/
+
+https://www.jsonschema.net/app/schemas/0
+
+In JavaScript, we can use the JSON.parse() and JSON.stringify() methods to manage it. The stringify() method is responsible for serialization, while the parse() method is responsible for deserialization.
+
+
+JSON compare - shows the difference between two JSONs. https://jsoncompare.org/
+JSON beautifier - formats our JSON to improve the readability. https://jsonbeautifier.org/
+JSON validator - checks if our JSON is valid. https://tools.learningcontainer.com/json-validator/

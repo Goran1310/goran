@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Create a JSON Schema for the following object:
+        const json = {
+            "title": "Harry Potter",
+            "releaseYear": 1997,
+            "author": "J.K. Rowling",
+            "spells": [
+                "Avada Kedavra",
+                "Expecto Patronum"
+            ]
+        }
+        // ----------
+        const schema = {
+            "$schema": "https://json-schema.org/draft/2019-09/schema",
+            "$id": "http://example.com/example.json",
+            "type": "object",
+            "default": {},
+            "title": "Root Schema",
+            "required": [
+                "title",
+                "releaseYear",
+                "author",
+                "spells"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The title Schema",
+                    "examples": [
+                        "Harry Potter"
+                    ]
+                },
+                "releaseYear": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The releaseYear Schema",
+                    "examples": [
+                        1997
+                    ]
+                },
+                "author": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The author Schema",
+                    "examples": [
+                        "J.K. Rowling"
+                    ]
+                },
+                "spells": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The spells Schema",
+                    "items": {
+                        "type": "string",
+                        "title": "A Schema",
+                        "examples": [
+                            "Avada Kedavra",
+                            "Expecto Patronum"
+                        ]
+                    },
+                    "examples": [
+                        ["Avada Kedavra",
+                            "Expecto Patronum"
+                        ]
+                    ]
+                }
+            },
+            "examples": [{
+                "title": "Harry Potter",
+                "releaseYear": 1997,
+                "author": "J.K. Rowling",
+                "spells": [
+                    "Avada Kedavra",
+                    "Expecto Patronum"
+                ]
+            }]
+        }
+    </script>
+</body>
+
+</html>
