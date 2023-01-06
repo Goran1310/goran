@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myShoppingApp">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>AngularJS - Shopping List</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/angular.js"></script>
+    <script src="js/shopping.angular.js"></script>
+  </head>
+  <body>
+    
+    <div id="container" ng-controller="MainController">
+      <h2>My Shopping List</h2>
+      
+        <mylist>
+            <p>Dairy Products</p>
+        </mylist>
+        
+      
+      <form ng-submit="addItemToList()">
+        <input type="text" size="30" ng-model="newItem"
+               placeholder="Type a new item here">
+        <input type="submit" value="Add">
+      </form>
+        
+    
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+

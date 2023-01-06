@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My First HTML5 Web Page</title>
+		
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<style>
+            #page-title {font-family:fantasy;}
+            div {
+                border:1px solid grey;
+                width:700px;
+                margin-bottom:10px;
+                padding:10px;
+                margin-left:auto;
+                margin-right:auto;       
+            }
+            
+            div img {border:5px green solid;}
+            div img:nth-child(2) {border:5px blue solid;}
+        </style>
+        
+        
+	</head>
+	<body>
+        <!-- Comment:  First HTML5 Page -->
+		<h1 id='page-title'>MY FIRST HTML5 PAGE</h1>
+		<p id='welcome'>Welcome to my first HTML5 page!</p>
+		<p class="myclass">This paragraph uses a Class selector.</p>
+		<p id="myId">Paragraph using id selector.</p>
+		   
+        <div id='photo-group'>
+            <img style="border:purple dashed 5px;" id='car' class='photo' src='img/car.jpg'>
+            <img id='cat' class='photo' src='img/cat.jpg'>
+            <img id='donut' class='photo' src='img/donut.jpg'>
+        </div>
+        
+        <div id='form-group'>
+            <form name='user'>
+                <input name='username'>
+                <input type='submit'>
+            </form>
+
+             <form name='visitor'>
+                <input name='visitorname'>
+                <input type='submit'>
+            </form>
+        </div>
+        
+        
+	</body>
+</html>

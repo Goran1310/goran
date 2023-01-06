@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="modifay()">user for a property name</button>
+    <button onclick="obj.sum()">sum</button>
+    <button onclick="obj.mutiplication()">multiplication</button>
+
+    <script>
+        const obj = {
+            value1: 3,
+            value2: 4,
+            sum: function() {
+                console.log(this.value1 + this.value2);
+            },
+            mutiplication: function() {
+                console.log(this.value1 * this.value2);
+            }
+        }
+        function modifay() {
+            const name = prompt('Please enter name of property you want to modifay');
+            if(obj[name] != null) {
+                const newValue = parseInt(prompt('Please enter new value'));
+                if(!isNaN(newValue)){
+                    obj[name] = newValue;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

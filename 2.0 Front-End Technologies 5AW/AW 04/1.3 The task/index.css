@@ -1,0 +1,91 @@
+* {
+    font-style: italic;
+}
+.block {
+display: block;
+}
+#link3 {
+    visibility: hidden;
+}
+li, p {
+    display: inline;
+}
+.pikatchuBtn {
+    height: 100px;
+    width: 100px;
+}
+
+#pikachu {
+    position: absolute;
+    z-index: -1;
+    top: 250;
+    left: auto;
+    height: 500px;
+    width: auto;
+
+}
+#button1 {
+    height: 100px;
+    width: 100px;
+}
+#button2 {
+    width: 50%;
+}
+#button3 {
+    min-width: 50px;
+    max-width: 100px;
+}
+.sizeManipulation {
+    width: 200px;
+    height: auto;
+}
+.flex {
+    max-width: 100%;
+}
+h1 {
+    text-decoration: overline red double 2px;
+    text-align: center;
+    text-shadow: 3px 3px 8px peru;
+}
+h2  {
+    text-decoration: line-through blue dotted;
+    text-transform: uppercase;
+}
+h3 {
+    text-decoration: underline green double 1px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px blue;
+}
+.nameHeading {
+    text-decoration: underline double 2px;
+    text-shadow: 2px 2px 3px green;
+    text-align: center;
+}
+
+button, pre {
+    background-color: cyan;
+}
+
+button {
+    background-color: yellow;
+    color: brown;
+}
+.large {
+    font-size: 150%;
+}
+.colorful {
+    background-color: violet;
+}
+
+#button3 {
+    color: red;
+}
+.testParagraph {
+    color: magenta;
+}
+#button1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}

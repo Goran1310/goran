@@ -1,0 +1,35 @@
+
+#pikachu {
+    position: absolute;
+    align-self: start;
+    z-index: -1;
+    top: auto;
+    left: auto;
+    height: 500px;
+    width: 100%;
+}
+.pikatchuBtn {
+    position: relative;
+    top: 150px;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+#pikachuHeader {
+    position: relative;
+    color: blueviolet;
+    text-align: left;
+    top: 90px;
+    left: 230px;
+    font-family: cursive;
+    font-size: 20px;
+}
+.listDisplayed {
+    display: block;
+    position: absolute;
+    top: 250px;
+    color: rgb(18, 16, 13);
+}
+.listDisplayedInline {
+    display: inline;
+}

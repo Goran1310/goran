@@ -1,0 +1,29 @@
+#img1 {
+    float: left;
+}
+
+#img2 {
+    float: right;
+}
+
+#img3 {
+    float: none;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+div {
+    width: 400px;
+}
+/* #################
+If we have float: none, only the first line is close to the picture.
+
+But what if we want our text or other content below floating elements? For example, if we want our search bar above the rest. We can do this by setting the ‘clear’ property.
+
+By default, clear is equal to none. We can set this to the left, right or both. If we set clear on our elements, they will always be above the floating elements of the chosen side. */
+.text {
+    clear: both;
+}
+
+/* ################# */

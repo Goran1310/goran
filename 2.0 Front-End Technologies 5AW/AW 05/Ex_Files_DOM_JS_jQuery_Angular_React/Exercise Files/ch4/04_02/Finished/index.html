@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="helloApp">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Welcome to AngularJS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/angular.js"></script>
+  </head>
+  <body>
+      <!-- VIEW -->
+      <div id="container" ng-controller="HelloController">
+          
+          <!-- Custom directive: defining my own element -->
+          <myelement></myelement>
+                    
+          <!-- Two-way data binding -->
+          Say something: <input type="text" ng-model="helloMsg">
+          
+          <button ng-click="sayIt()">Say It</button>
+          <hr>
+          <!-- One-way data binding -->
+          The message: {{helloMsg}}         
+      </div>
+      
+      <script>
+          //Module
+          var myApp = angular.module("helloApp",[]);
+          
+          //CONTROLLER
+          myApp.controller("HelloController",["$scope",function($scope){
+              
+              //MODEL - Properties and Behaviors
+              $scope.helloMsg = "Hello";
+              $scope.message = "";
+              $scope.sayIt = function(){
+                $scope.message = $scope.helloMsg;  
+              };
+          }]);
+          
+          //Custom Directive
+          myApp.directive("myelement",[function(){
+              return {
+                  template: '<h1>Welcome to AngularJS and {{helloMsg}}</h1>'
+              };
+          }]);          
+      </script>
+      
+  </body>
+</html>

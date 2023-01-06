@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+.menu {
+    float: lef;
+    background-color: aquamarine;
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 25px;
+    border: 3px gray solid;
+    margin-right: 2px;
+    text-align: center;
+    height: 50px;
+    transition: height 2s, background-color 2s;
+}
+
+.menu:hover {
+    height: 100px;
+    background-color: red;
+}

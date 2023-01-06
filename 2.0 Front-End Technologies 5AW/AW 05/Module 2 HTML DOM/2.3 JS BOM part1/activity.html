@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>ACTIVITY</h1>
+        <p>With the use of BOM, create a new window. After five seconds, resize it.
+            After another five seconds, move it to the other place. After another five seconds, close it.</p>
+       <button onclick="openWin()">Create a new window</button>
+
+        <script>
+            // create window
+            let myWindow; 
+            // open window and timeout in 3s function resize
+            function openWin(){
+                myWindow = window.open("", "", "width=400, height=400");
+                setTimeout(() => {
+                    resizeWindow()
+                }, 3000);
+            }
+            // resize window and timeout in 3s on function moveTo
+            function resizeWindow() {
+                myWindow.resizeTo(200,200);
+                setTimeout(() => {
+                    moveTo();
+                },3000);
+            }
+            // moveTo window and timeout in 3s myWindow.close() method
+            function moveTo() {
+                myWindow.moveTo(1,999);
+                setTimeout(() => {
+                    myWindow.close();
+                },3000)
+            }
+        </script>
+    </body>
+</html>

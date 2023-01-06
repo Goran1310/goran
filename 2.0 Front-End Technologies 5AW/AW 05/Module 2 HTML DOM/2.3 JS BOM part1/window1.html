@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Window Object</h1>
+        <h2>The moveTo() and moveBy() Methods</h2>
+        <p><button onclick="openWin()">Create a window</button></p>
+        <p><button onclick="moveWinTo()">Move the window to 150 150</button></p>
+        <p><button onclick="moveWinBy()">Move the window by 75 75</button></p>
+        <script>
+            let myWindow;
+            function openWin() {
+                myWindow = window.open("", "", "width=400, height=400");
+            }
+            function moveWinTo() {
+                myWindow.moveTo(1, 599);
+            }
+            function moveWinBy() {
+                myWindow.moveBy(75, 75);
+            }
+        </script>
+    </body>
+</html>

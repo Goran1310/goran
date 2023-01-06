@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding-bottom: 20px;
+}
+
+#wrapper {
+    padding-top: 50px;
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding-bottom: 60px;
+
+}
+
+#main-img {width: 500px;}
+
+.bold {
+    font-weight: bold;
+}
+
+.left-panel {
+    width: 640px;
+    clear: left;
+    float: left;
+    border: 1px solid #eee;
+}
+
+aside {
+    clear: right;
+    float: right;
+    width: 320px;
+    background: #fff;
+    padding: 7px;
+    border: 1px solid #eee;
+}
+
+footer {
+    /*position: absolute;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    text-align: center;
+    background: #6cf;
+}
+
+.center-page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.navbar-nav > li > a {
+
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.navbar-default {
+    background-color: #6cf;
+}
+
+#login-form {
+    margin: 5% auto;
+    max-width: 500px;
+}
+
+#fname, #lname {
+    width: 40%;
+}
+
+#city {
+    width: 250px;
+}
+
+#state {
+    width: 80px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+#zip {
+    width: 100px;
+
+}
+
+#month, #day, #year, #feet, #inches {
+    width: 110px;
+    text-align: center;
+}
+
+select {
+    height: 34px;
+}
+
+/* register page */
+#mname {
+    width: 19%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.data-default {
+    padding: 7px 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: none;
+    border-width: 0px;
+}
+
+.data-normal {
+    padding: 10px 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #ccc;
+    box-shadow: none;
+    border-width: 1px;
+}
+
+.well {
+    min-height: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+.team-member {
+    float: left;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.team-name {
+    font-weight: bold;
+}
+
+.team-title {
+    font-style: italic;
+}
+
+.profile {
+    height: 150px;
+    width: 150px;
+    margin:5px;
+}
+
+.selected {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    box-shadow: 7px 7px 5px #ccc;
+    border: 5px red solid;
+    border-radius: 10px;
+}
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example.css">
+    <title>Document</title>
+    <style>
+        .square {
+            height: 5rem;
+            width: 5rem;
+            border: 0.5rem solid black;
+            margin: 1rem;
+            background-color: green;
+        }
+        
+        .circle {
+            height: 5rem;
+            width: 5rem;
+            border: 0.5rem solid black;
+            margin: 1rem;
+            background-color: blue;
+            border-radius: 50%;
+        }
+        
+        .diamond {
+            height: 5rem;
+            width: 5rem;
+            border: 0.5rem solid black;
+            margin: 2rem;
+            background-color: yellow;
+            transform: rotate(45deg);
+        }
+        
+        .triangle {
+            height: 0;
+            width: 0;
+            border-left: 5.5rem solid transparent;
+            border-right: 5.5rem solid transparent;
+            border-bottom: 5.5rem solid black;
+            margin: 1rem;
+            position: relative;
+        }
+        
+        .triangle:after {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-left: 4.5rem solid transparent;
+            border-right: 4.5rem solid transparent;
+            border-bottom: 4.5rem solid red;
+            left: -4.5rem;
+            top: .6rem;
+        }
+    </style>
+</head>
+<br>
+
+<div>
+    
+</div>
+<div>
+<p>
+After choosing the position, we’ll be able to position elements using top, bottom, left and right properties.
+
+Elements with a static position will be positioned according to the normal flow of the page.
+
+Elements with a relative position will be positioned relative to their normal position.
+
+Elements with a fixed position will always stay in the same place regardless of scrolling.
+
+Elements with an absolute position will be positioned relative to their parents, or if there’s no parent, to the entire window.
+
+Elements with a sticky position are positioned based on the scroll. Before we scroll out of them, they behave like positioned-relatively and then like elements with fixed positions.
+
+You can see the code examples in the materials below.
+</p>    
+</div>
+
+</br>
+    <img src="elements margin.png" alt="square explain margin, border and padding">
+    <header>🔺 CSS Shapes 🔵</header>
+    <main>
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="diamond"></div>
+        <div class="triangle"></div>
+    </main>
+    <p id="para1">Paragraph 1</p>
+    <p id="para2">Paragraph 2</p>
+    <p id="para3">Paragraph 3</p>
+    <p id="para4">Paragraph 4</p>
+    <p id="para5">Paragraph 5</p>
+
+
+</body>
+</html>

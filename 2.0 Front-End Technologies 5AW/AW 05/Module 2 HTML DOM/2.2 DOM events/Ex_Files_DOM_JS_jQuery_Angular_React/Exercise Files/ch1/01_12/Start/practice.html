@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My First HTML5 Web Page</title>
+		
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<style>
+            #page-title {font-family: fantasy;}
+            div {
+                border:1px solid green;
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            div img {
+                border: 5px solid yellow;
+            }
+            div img:nth-child(2) {border: 5px solid rgb(236, 47, 202);}
+        </style>
+	</head>
+	<body>
+        <!-- Comment:  First HTML5 Page -->
+		<h1 id="page-title">MY FIRST HTML5 PAGE</h1>
+		<p>Welcome to my first HTML5 page!</p>
+		<p class="myclass">This paragraph uses a Class selector.</p>
+		<p id="myId">Paragraph using id selector.</p>
+		<div>        
+            <img id='car' style="border: dashed black 5px;" class='photo' src='img/car.jpg'>
+            <img id='cat' class='photo' src='img/cat.jpg'>
+            <img id='donut' class='photo' src='img/donut.jpg'>
+        </div>
+        
+        <form name='user'>
+            <input name='username'>
+            <input type='submit'>
+        </form>
+        
+         <form name='visitor'>
+            <input name='visitorname'>
+            <input type='submit'>
+        </form>
+        
+	</body>
+</html>
+
+<!-- https://www.linkedin.com/learning/the-dom-in-javascript-jquery-angularjs-and-react/css-properties-and-the-dom?autoSkip=true&autoplay=true&resume=false&u=43268076 -->

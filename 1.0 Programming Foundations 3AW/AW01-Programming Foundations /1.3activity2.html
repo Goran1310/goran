@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const number1 = parseInt(prompt("What's the first number?"));
+        const number2 = parseInt(prompt("What's the second number?"));
+        const number3 = parseInt(prompt("What's the third number?"));
+        const array = [number1, number2, number3];
+        console.log(array);
+        array.splice(1,1);
+        console.log(array);
+        array.push((array[0], array[1]) / 2 );
+        console.log(array);
+
+    </script>
+</body>
+</html>
+
+
+<!-- With prompts, ask the user about three numbers. 
+    Create an array containing all of them. 
+Delete the middle element and add the mean of the first and the last element at the end of the array.
+ 
+https://dp3w73uvmnhfd.cloudfront.net/noroff%2F1%2Ffiles%2F10015%2F12044%2Ffolder%2Fmedia%2FBack-end%2FProgramming+Foundations%2FImages%2FAlertsanddebugging-14.jpg?Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vZHAzdzczdXZtbmhmZC5jbG91ZGZyb250Lm5ldC9ub3JvZmYlMkYxJTJGZmlsZXMlMkYxMDAxNSUyRjEyMDQ0JTJGZm9sZGVyJTJGbWVkaWElMkZCYWNrLWVuZCUyRlByb2dyYW1taW5nK0ZvdW5kYXRpb25zJTJGSW1hZ2VzJTJGQWxlcnRzYW5kZGVidWdnaW5nLTE0LmpwZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY2OTIzNzgwMX0sIklwQWRkcmVzcyI6eyJBV1M6U291cmNlSXAiOiIwLjAuMC4wLzAifX19XX0_&Signature=i7jo7jPk-4R0ifQ4uI9pAQDUwL67V12D12lUC4KT0gtUcu~Yiag4RY~ZgeSFtMJvzp-zE41dmSfevhdSD5NXw0GP937By0T6oHK3zZTL-Kp4uDQeh5Sqsn~tQTzGjB1acyZRSV7LyKIrhRn8XD4YX8fRE686crtTAczsFDG3UyU_&Key-Pair-Id=APKAJTOZQY4H2RTLVYOA
+-->

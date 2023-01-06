@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onclick="modify()">user</button>
+<button onclick="obj.sum()">SUM</button>
+<button onclick="obj.multiplication()">multiplication</button>
+
+<body>
+    <script>
+
+        const obj = {
+            value1: 3,
+            value2: 5,
+            sum: function addProperty() {
+                let sum = this.value1 + this.value2;
+                console.log("showing the sum properties in the console:" + sum)
+            },
+            multiplication: function removeProperty() {
+                let multipl = this.value1 * this.value2;
+                console.log("showing the multiplication in the console:" + multipl)
+            }
+        };
+        function modify() {
+            const name = prompt("Provide a name of a property you want to modifay");
+            if (obj[name] != null) {
+                const newValue = parseInt(prompt("please enter new value"));
+                console.log(obj)
+                if (!isNaN(newValue)) {
+                    obj[name] = newValue
+                }
+                console.log(obj)
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!-- 1. Create an Object containing:
+    - two number properties and
+    - two methods showing the sum and multiplication of these properties in the console.
+2. Create a button which acts as a user for a property name. 
+    If the provided name is the same as the name of one of the number properties, ask them for a new value for it.
+3. Create two buttons and link the object method to them. -->

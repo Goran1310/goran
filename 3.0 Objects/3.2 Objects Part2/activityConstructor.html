@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            value1: 1,
+            value2: 2,
+            sum: function() { 
+                console.log(this.value1 + this.value2);
+            },
+            multiplication: function() {
+                console.log(this.value2 * this.value2);
+            }
+        }
+        function MyFunction(
+            value1,
+            value2,
+        ) {
+            this.value1 = value1;
+            this.value2 = value2;
+            this.sum = function() {
+                console.log(this.value1 + this.value2);
+            },
+            this.multiplication = function() {
+                console.log(this.value2 * this.value2);
+            }
+        }
+    </script>
+</body>
+</html>

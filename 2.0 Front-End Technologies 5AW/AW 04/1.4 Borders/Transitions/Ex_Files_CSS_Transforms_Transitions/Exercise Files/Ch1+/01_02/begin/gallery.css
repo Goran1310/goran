@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* Transition Styles */
+
+
+figure {
+   width: 100px;
+   height: 100px;
+}
+
+figure:hover {
+   width: 400px;
+   height: 400px;
+   left: 350px;
+   top: 0px;
+   z-index: 99;	
+}
+
+figure img {
+   box-shadow: 0px 0px 0px black;
+}
+
+
+
+

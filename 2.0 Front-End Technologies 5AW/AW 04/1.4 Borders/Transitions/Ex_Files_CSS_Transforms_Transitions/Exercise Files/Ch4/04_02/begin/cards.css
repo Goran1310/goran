@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+div#container {
+	perspective: 1200px;
+	transform-style: preserve-3d;
+}
+
+div#container div.card {
+	transform-style: preserve-3d;
+}
+
+div#container div.card img.back {
+	transform: rotateY(180deg);
+	backface-visibility: hidden;	
+}
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onclick="addProperty()">Add property</button>
+<button onclick="removeProperty()">Remove property</button>
+
+<body>
+    <script>
+
+        const myObject = {
+            homeGoal: 0,
+            awayGoal: 0,
+            smallObject: {
+                smallName1: 400,
+                smallName: 500,
+            }
+
+        }
+        function addProperty() {
+            myObject.new = 10;
+            console.log(myObject)
+        }
+        function removeProperty() {
+            delete myObject.new;
+            console.log(myObject)
+        }
+
+
+    </script>
+</body>
+
+</html>

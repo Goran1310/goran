@@ -1,0 +1,6 @@
+<ol>          
+          <li ng-repeat="item in items">
+              <input type="checkbox" ng-model="item.checked">
+              <span class="checked-{{item.checked}}">{{item.name}}</span>
+              <button ng-click="removeItem($index)">Delete</button></li>          
+      </ol>

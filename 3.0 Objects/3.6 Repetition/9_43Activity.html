@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onclick="obj.increment()">Add</button>
+<button onclick="obj.decrement()">Remove</button>
+
+<body>
+    <script>
+
+        const obj = {
+            value: 0,
+            increment: function addProperty() {
+                this.value++;
+                console.log(obj)
+            },
+            decrement: function removeProperty() {
+                this.value--;
+                console.log(obj)
+            }
+        };
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="openWin()">Create window</button>
+    <button onclick="toTimesSmaller()">Window two times smaller</button>
+    <input type="button" value="URL after five" onclick="newDoc()">
+    <h2>JavaScript</h2>
+    <h3>The window.location object</h3>
+    <p id="p1">URL</p>
+
+    <button onclick="history.back()">Go back</button>
+    <button onclick="history.forward()">Go forward</button>
+    <a href="https://www.google.com">Google</a>
+    <script>
+
+        let myWindow = null;
+
+        function openWin() {
+            myWindow = window.open("", "", "width=800, height=800");
+        }
+        function toTimesSmaller () {
+            if(myWindow != null) {
+                // resize existing window
+                myWindow.resizeTo(myWindow.innerWidth/2, myWindow.innerHeight/2);
+            } else {
+
+            }
+        }
+        function newDoc() {
+            setTimeout(() => {
+            document.getElementById("p1").innerHTML =
+            "Page location is " + window.location.href;
+            },5000);
+            alert(window.location.pathname)
+            }
+    </script>
+</body>
+</html>
+<!-- 
+In this lesson, we learned about the basics of the JS Browser Object Model, such as window, screen, location or history. In this task, you need to create a website containing:
+A button that creates a new window of width and height equal to 800px.
+A button that makes the last window created two times smaller.
+A button that shows an alert with the current URL after five seconds of clicking.
+Back and next buttons (moving to previous/next card from the history).
+Note that when trying to display a URL, nothing will be displayed. This is because your page is local. If you paste this code into another browser’s console that has a live web page open, it will work correctly and display the URL of that web page.
+ -->

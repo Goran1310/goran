@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+ <body>
+
+
+
+<!-- In this lesson, we learned about standard Bootstrap basics. In this task, you need to create a website that contains: -->
+<!-- Three text paragraphs that behave like h1, h2 and h3 headings. Using Bootstrap classes, add padding-bottom of the medium size to them. -->
+<p class="h1 pb-3">h1. Bootstrap heading</p>
+<p class="h2 pb-3">h2. Bootstrap heading</p>
+<p class="h3 pb-3">h3. Bootstrap heading</p>
+<!-- Create a list group containing three buttons. On click, each button should change colour to green. -->
+<div class="list-group">
+  <button type="button" onclick="changeToGreen(this)" class="list-group-item list-group-item-action">1</button>
+  <button type="button" onclick="changeToDanger(this)" class="list-group-item list-group-item-action">2</button>
+  <button type="button" onclick="changeToWarning(this)" class="list-group-item list-group-item-action">3</button>
+</div>
+<br>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<p>
+    BRENNVERDIER Effektiv brennverdi 20% fuktighet (tørt virke) kWh/fm3 Trestag 
+    2 930 Bøk 2 830 Eik 2 830 Ask 2 730 Lønn 2670 Rogn 2570 Bjørk 2 260 Furu 2 260 Svartor 2210 Selje 1 950 Osp 1 950 Gran 1 850 Gråor
+     Kilde NTI 2002
+</p>
+<div class="p-3">
+        <div class="table-responsive-xxl">
+            <table class="table table-primary table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">English</th>
+                    <th scope="col">Norwegian</th>
+                    <th scope="col">kWh/fm3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Some</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+<script src="task.js"></script>
+<script src="jquery-3.6.0.js"></script>
+
+</body>
+</html>

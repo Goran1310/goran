@@ -1,0 +1,20 @@
+/* This is a comment */
+
+body {
+    text-align:center;
+    margin:auto;
+    background-color:#fff;
+    }
+	
+p {color:red; }
+.myclass {color:brown;}
+
+.yourclass {text-align:left;}
+
+#myId {color:green;}
+
+h1 {text-align:center; color:red;}
+
+
+#secret {visibility:hidden}
+	

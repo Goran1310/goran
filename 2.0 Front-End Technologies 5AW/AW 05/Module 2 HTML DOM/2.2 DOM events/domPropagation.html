@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        #myDiv1, #myDiv2 {
+            background-color: yellow;
+            padding: 50px;
+        }
+        #para1, #para2 {
+            background-color: blue;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="myDiv1">
+        <h2>Bubbling:</h2>
+        <p id="para1">Click here!</p>
+        </div><br>
+        <div id="myDiv2">
+        <h2>Capturing:</h2>
+        <p id="para2">Click here!</p>
+        </div>
+        <script>
+        document.getElementById("para1").addEventListener("click", function() {
+        alert("You clicked the blue element!");}, false);
+
+        document.getElementById("myDiv1").addEventListener("click", function() {
+        alert("You clicked the yellow element!");
+        }, false);
+
+        document.getElementById("para2").addEventListener("click", function() {
+        alert("You clicked the blue element!");
+        }, true);
+        document.getElementById("myDiv2").addEventListener("click", function() {
+        alert("You clicked the yellow element!");
+        }, true);
+        </script>
+    </body>
+</html>

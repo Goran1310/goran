@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery lesson</title>
+        <script src="jquery-3.6.0.js"></script>
+        <script src="jquery_lesson1.js"></script>
+    </head>
+    <body>
+        <div id="example">
+            <p id="para1" class="classA">The first paragraph.</p>
+            <p class="classA">The second paragraph.</p>
+            <p class="classB" id="para3">The third paragraph.</p>
+            <p class="classB" id="para4" lang="en-us">The fourth paragraph.</p>
+            <p class="classA" id="para5" lang="en-gb">The fifth paragraph.</p>
+        </div>
+        <div id="example2">
+            <p id="para21" class="classA">The first paragraph.</p>
+            <p class="classA">The second paragraph.</p>
+            <p class="classB" id="para23">The third paragraph.</p>
+            <p class="classB" id="para24" lang="en-us">The fourth paragraph.</p>
+            <p class="classA" id="para25" lang="en-gb">The fifth paragraph.</p>
+        </div>
+        <div id="example3">
+            <p class="classA">The first paragraph.</p>
+            <p class="classA">The second paragraph.</p>
+            <p class="classB">The third paragraph.</p>
+            <p class="classB" lang="en-us">The fourth paragraph.</p>
+            <p class="classA" lang="en-gb">The fifth paragraph.</p>
+        </div>
+        <button onclick="insertAround()">Insert around</button>
+        <button onclick="remove()">Remove</button>
+        <button onclick="replace()">Replace</button>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1 id="myHeader">Click on this text!</h1>
+    <script>
+        document.getElementById("myHeader").addEventListener("click", myFunction);
+        document.getElementById("myHeader").addEventListener("click", myFunction2);
+        window.addEventListener("resize", myFunction3);
+        window.addEventListener("resize",() => myFunction4("Eva"));
+        function myFunction4(name) {
+            alert(`Hello ${name} `);
+        }
+
+        function myFunction() {
+            alert ("Hello World!");
+        }
+        function myFunction2() {
+            console.log("Hello world!");
+        }
+        function myFunction3() {
+            alert ("Hello World3!");
+        }
+    </script>
+    </body>
+</html>

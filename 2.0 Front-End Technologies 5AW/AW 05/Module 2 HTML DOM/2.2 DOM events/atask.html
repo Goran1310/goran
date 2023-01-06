@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+        <!-- <h2>JavaScript HTML DOM</h2>
+            <p>Add a new HTML Element.</p>
+            <p id="p1">This is a paragraph.</p>
+            <p id="p2">This is another paragraph.</p> -->
+        <!-- </div> -->
+
+        <script>
+            let heading = document.createElement("h2");
+            let node = document.createTextNode("JavaScript HTML DOM");
+            heading.appendChild(node);
+            document.body.append(heading);
+
+            let paragraph = document.createElement("p");
+            node = document.createTextNode("Add a new HTML Element");
+            paragraph.appendChild(node)
+            document.body.append(paragraph);
+// create and append empty div
+            let div = document.createElement("div");
+            document.body.appendChild(div)
+// create paragraph
+            para = document.createElement("p");
+            node = document.createTextNode("This is a paragraph");
+            para.appendChild(node);
+// append to div
+            div.appendChild(para);
+// create another paragraph
+            para = document.createElement("p");
+            node = document.createTextNode("This is another paragraph.");
+            para.appendChild(node);
+// append to same div
+            div.appendChild(para);
+
+
+        </script>
+
+    </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=5hxOrD_42Sg&list=PLZ80tPjjho5WUTXsPYCFaNa1ZWGLLGjJM&index=4 -->

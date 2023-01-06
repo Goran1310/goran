@@ -9,16 +9,16 @@ var productSchema = {
     "type": "object",
     "properties": {
       "id": {
-          "type": "string"
+        "type": "string"
       },
       "name": {
-          "type": "string"
+        "type": "string"
       },
       "description": {
-          "type": "string"
+        "type": "string"
       },
       "image_title": {
-          "type": "string"
+        "type": "string"
       },
       "image": {
         "type": "string"

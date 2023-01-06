@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Dr. Dom - Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/contact.jquery.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img id="profile-photo" src="images/logo.png" alt="Dr. Dom" height="60">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li class=""><a href="about.html">About</a></li>
+                    <li class="active bold"><a href="contact.html">Contact</a></li>
+                    <li class=""><a href="register.html">Register</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi Guest&nbsp;<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign In</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="login-form">
+            <form method="post" action="contact.html"
+                  autocomplete="off">
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <h2>Contact Us.</h2>
+                        <p>We welcome your comments and questions. Please fill out and submit the form below
+                            and we will get back to you as soon as possible.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" name="full_name" class="form-control"
+                                   placeholder="Enter Your Name"
+                                   value="" maxlength="40"/>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-envelope"></span></span>
+                            <input type="email" name="email" class="form-control" placeholder="Enter Your Email"
+                                   value="" maxlength="40"/>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" cols="55" rows="5" id="comment"></textarea>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <hr/>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn  btn-primary btn-lg" name="btn-submit" role="button">Submit
+                        </button>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer navbar-fixed-bottom">
+    <div class="container">
+        <div id="copyright"> &#169;2017 The Healthy Organization. All rights reserved.</div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

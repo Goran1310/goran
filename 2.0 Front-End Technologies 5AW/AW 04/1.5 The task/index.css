@@ -1,0 +1,114 @@
+.img {
+    position:absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#nineteen {
+    width: 150px;
+    /* display: inline; */
+    align-items: right;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+}
+#scroll-text {
+    width: 150px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow-x: scroll;
+}
+
+#pSeventeen {
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+table, th, td {
+    border: 2px dashed grey;
+}
+th {
+    padding: 10px;
+}
+#fone {
+    font-size: 200%;
+}
+#ftwo {
+    background-color: green;
+}
+#fthree {
+    font-weight:  bold;
+}
+#ffour {
+    text-transform: uppercase;
+}
+
+#fourteenP {
+    padding: 2px 20px 5px 10px; 
+}
+#thirdP {
+    margin: 2px 20px 5px 10px;
+    border: solid grey 4px;
+}
+.thrteenC {
+    background-color: skyblue;
+    display: inline;
+}
+#twelve {
+    color: blue;
+}
+#eleven {
+    width: 50%;
+}
+
+#one {
+    background-color: blue;
+    font-size: 22px;
+}
+#one:hover:before {
+    content: none
+  }
+#one:hover::after {
+    content: "It’s me"
+  } 
+/* ------------ */
+.oneTwo {
+    position: relative;
+}
+.oneTwo:before {
+    position: relative;
+    content: attr(title);
+    visibility: hidden;
+}
+/* ------------ */
+.hovertext {
+    position: relative;
+    border-bottom: 1px dotted black;
+  }
+  
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }

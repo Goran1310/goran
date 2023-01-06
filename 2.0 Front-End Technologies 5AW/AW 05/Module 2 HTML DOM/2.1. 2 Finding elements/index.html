@@ -1,0 +1,26 @@
+<!-- Let’s look at one more example of selecting multiple elements in other ways than using ID:
+ -->
+
+ <!DOCTYPE html>
+<html>
+    <body>
+        <p name="para" class="para">The first paragraph</p>
+        <p name="para" class="para">The second paragraph</p>
+        <p name="para" class="para">The third paragraph</p>
+        <p name="para">The fourth paragraph</p>
+        
+    <div>
+        <a href="https://www.nrk.no/">NRK</a>
+        <a href="https://www.vg.no/">VG</a>
+        <a href="https://finansavisen.no/">Finansavisen</a>
+        <p id="demo"></p>
+    </div>
+        <script>
+            console.log(document.getElementsByTagName("p"));
+            console.log(document.getElementsByClassName("para"));
+            console.log(document.getElementsByName("para"));
+            document.getElementById("demo").innerHTML ="number of links " + document.links.length;
+            document.getElementById("demo").style.fontSize = "30px";
+        </script>
+    </body>
+</html>

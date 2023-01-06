@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*
+   LinkedIn Learning Video Tutorial
+   Transitions and Transformations
+   
+   Chapter 3:  Exploring Transitions
+   Exercise 3: 3d Transformations
+   
+   File: slides.css
+*/
+
+// Add new style rules here
+
+
+
+
+
+// Transition styles
+div#slidecontainer figure#slide4 {
+	z-index: 8;
+	transition: box-shadow 1s, transform 1s, z-index 1s step-end;	   
+}
+
+div#slidecontainer:hover figure#slide4 {
+	z-index: 1;	
+}
+
+div#slidecontainer figure#slide3 {
+   top: -2%;
+   left: 2%;   
+	z-index: 7;
+	transition: box-shadow 1s 1s, transform 1s 1s, top 1s 1s, left 1s 1s, z-index 1s step-end 1s;	   
+}
+
+div#slidecontainer:hover figure#slide3 {
+   top: 2%;
+   left: -2%;     
+	z-index: 2;	
+}
+
+div#slidecontainer figure#slide2 {
+   top: -4%;
+   left: 4%;   
+	z-index: 6;
+	transition: box-shadow 1s 2s, transform 1s 2s, top 1s 2s, left 1s 2s, z-index 1s step-end 2s;	   
+}
+
+div#slidecontainer:hover figure#slide2 {
+   top: 4%;
+   left: -4%;    
+	z-index: 3;	
+}
+
+div#slidecontainer figure#slide1 {
+   top: -6%;
+   left: 6%;
+	z-index: 5;
+	transition: box-shadow 1s 3s, transform 1s 3s, top 1s 3s, left 1s 3s, z-index 1s step-end 3s;	   
+}
+
+div#slidecontainer:hover figure#slide1 {
+   top: 6%;
+   left: -6%;   
+	z-index: 4;	
+}

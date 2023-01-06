@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1">Paragraph 1</p>
+    <p id="para2">Paragraph 2</p>
+    <p id="para3">Paragraph 3</p>
+    <p id="para4">Paragraph 4</p>
+
+    <img src="https://i.pinimg.com/originals/c9/40/a3/c940a3dae3900d100990e5b697ef196c.jpg" alt="Pika Pika">
+    <img src="https://i.pinimg.com/originals/c9/40/a3/c940a3dae3900d100990e5b697ef196c.jpg" alt="Pika Pika">
+    <p id="demo"></p>
+    <button onclick="showDetails()">Click me!</button>
+
+<script>
+//     The task
+// This lesson taught standard HTML DOM basics, such as document structure and finding DOM elements. You need to finish two tasks connected to what you learned in this lesson.
+// Part 1
+// In this task, you need to create a website that contains three paragraphs:
+// Every five seconds, the font size of the first paragraph can either become twice smaller or larger, with an equal chance.
+setInterval(() => {
+    current = getComputedStyle(document.getElementById("para2"),null).getPropertyValue('font-size');
+    var size = parseFloat(current.slice(0,-2))
+    console.log(size);
+    document.getElementById("para1").style.fontSize = (Math.random() > 0.5 ? size / 2 : size * 2).toString() + "px";
+},2000)
+// B-------
+
+setInterval(() => {
+    if (Math.random() <0.5) {
+        document.getElementById("para4").style.fontSize = "100%";
+    } else {
+        document.getElementById("para4").style.fontSize = "200%";
+    }}, 2000)
+
+// The second paragraph shows the current date and refreshes it every 10 seconds.
+setInterval(() => document.getElementById("para2").innerHTML ="Date :"  + Date(), 3000)
+// The background colour of the third paragraph can become either yellow, magenta or cyan every three seconds (with an equal chance).
+setInterval(() => {
+    var x = Math.random()
+    if (x <0.3) {
+        document.getElementById("para3").style.backgroundColor = "yellow";
+    } else if (x>0.33 && x<0.66) {
+        document.getElementById("para3").style.backgroundColor = "magenta";
+    }else {
+        document.getElementById("para3").style.backgroundColor = "cyan";
+    }}, 2000)
+
+document.getElementById("demo").innerHTML = "Number of links:" + document.images.length;
+
+function showDetails() {
+    alert(
+        "with"  +  document.images[0].width + "\n" +
+        "height" + document.images[0].height + "\n" +
+        "source btn" + document.images[0].src + "\n" 
+    )
+}
+
+</script>
+
+</body>
+</html>

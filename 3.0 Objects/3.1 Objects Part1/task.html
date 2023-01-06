@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Create an Object containing two number properties and two methods showing the sum and multiplication of these properties in the console.</p>
+    <button onclick="obj.addproperty()">user for a property name</button>
+
+    <p>Create a button which acts as a user for a property name. 
+        If the provided name is the same as the name of one of the number properties, ask them for a new value for it.
+        Create two buttons and link the object method to them.</p>
+    <button onclick="obj.sum()">sum</button>
+    <button onclick="obj.multiplication()">multiplication</button>
+<script>
+    const obj = {
+  home: 30,
+  guest:2,
+  sum: function() {
+    console.log(this.home + this.guest);
+  },
+  multiplication: function() {
+    console.log(this.home * this.guest);
+  },
+  addproperty: function() {
+    this.value = prompt('Please enter user for a property name');
+    if(this.value === "home"|| this.value === "guest") {
+        this.value = prompt('Please enter user for a property name');
+    }
+  },
+}
+</script>
+</body>
+</html>

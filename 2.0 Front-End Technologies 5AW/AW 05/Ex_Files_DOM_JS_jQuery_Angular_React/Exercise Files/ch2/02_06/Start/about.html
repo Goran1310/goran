@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Dr. Dom - About Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="js/about.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img id="profile-photo" src="images/logo.png" alt="Dr. Dom" height="60">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li class="active bold"><a href="about.html">About</a></li>
+                    <li class=""><a href="contact.html">Contact</a></li>
+                    <li class=""><a href="register.html">Register</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi Guest&nbsp;<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign In</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="login-form">
+            <div class="col-lg-12">
+                <h2>Our Mission</h2>
+                <p>We have seen how access to medical records is crucial, we know that keeping health
+                    records is very important. It is our goal to make it easy for individuals to aggregate all their
+                    health information in a central, secure location making it easy for them and their healthcare
+                    providers to monitor and track their progress.</p>
+
+                <p>We are aware of the many circumstances under which medical records can either be lost or just not
+                    be accessible, whether it be due to re-location, changing health insurance or changing doctors
+                    or an unexpected visit to the ER. We understand how much of a struggle it can be to maintain and
+                    track health statistics, that is why we have created a web application where anyone can keep
+                    their medical information in one central and secure location where they can access their records
+                    anytime they need or share it health care providers using the healthcare application.</p>
+            </div>
+            <div class="form-group">
+                <hr/>
+            </div>
+
+            <div class="col-lg-12">
+                <h2>Our Team</h2>
+                
+                <button id="btnShowNames">Show Names</button>
+                <button id="btnHideNames">Hide Names</button>
+                <div id="team-member-names"></div>
+
+                <div class="team-member">
+                    <img id="frankiesmith" class="profile" src="images/frankiesmith.png">
+                    <p class="team-name">Frankie Smith</p>
+                    <p class="team-title" onmouseover="effectOn('frankiesmith')" onmouseout="effectOff('frankiesmith')">Sponsor</p>
+                </div>
+                
+                <div class="team-member">
+                    <img id="donlee" class="profile" src="images/donlee.png">
+                    <p class="team-name">Don Lee</p>
+                    <p class="team-title">Sponsor</p>
+                </div>
+
+                <br class="clear">
+
+                <div class="team-member">
+                    <img id="nickgreen" class="profile" src="images/nickgreen.png">
+                    <p class="team-name">Nick Brown</p>
+                    <p class="team-title">Team Lead</p>
+                </div>
+
+                <div class="team-member">
+                    <img id="ninjablack" class="profile" src="images/ninjablack.png">
+                    <p class="team-name">Ninja Black</p>
+                    <p class="team-title">Developer</p>
+                </div>
+
+                <br class="clear">
+
+                <div class="team-member">
+                    <img id="mariasmart" class="profile" src="images/mariasmart.png">
+                    <p class="team-name">Maria Smart</p>
+                    <p class="team-title">Tester</p>
+                </div>
+
+                <div class="team-member">
+                    <img id="lucyluck" class="profile" src="images/lucyluck.png">
+                    <p class="team-name">Lucy Luck</p>
+                    <p class="team-title">Quality Assurance (QA)</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer navbar-fixed-bottom">
+        <div class="container">
+            <div id="copyright"> &#169;2017 The Healthy Organization. All rights reserved.</div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

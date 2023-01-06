@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Window History Object</h1>
+        <button onclick="history.go(-2)">Go 2 pages back</button>
+        <button onclick="history.back()">Go back</button>
+        <button onclick="history.forward()">Go next</button>
+        <button onclick="goBack()">Go 5 pages back</button>
+
+<p>Create a button that navigates the user to five sites backwards in their history.
+     If there are less than five sites, navigate by max possible amount.</p>
+    <script>
+function goBack() {
+    if (history.length > 5) {
+        history.go(-5)
+    } else {
+        history.go(-(history.length-1));
+    }
+}
+    </script>        
+    </body>
+</html>

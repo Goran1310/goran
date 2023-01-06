@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery lesson</title>
+        <script src="jquery-3.6.0.js"></script>
+        <script src="jquery_lesson6.js"></script>
+        <style>
+            a {
+                display: block;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="example">
+            <p>First paragraph.</p>
+            <p class="classA">The second paragraph.</p>
+            <p id="para3">The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+            <p class="classA">The fifth paragraph.</p>
+        </div>
+        <button onclick="action1()">Button 1</button>
+        <button onclick="action2()">Button 2</button>
+        <button onclick="action3()">Button 3 hides all paragraphs</button>
+    </body>
+</html>
+
+<!-- Button 1 – changes all paragraphs into links linking to https://youtube.com but keeping their current text. -->
+<!-- Button 2 – adds event to all links, making their font size 20px on hover. -->
+<!-- Button 3 – hides all paragraphs with the fade-out animation and all buttons with the slide-up animation. -->

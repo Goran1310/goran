@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+    let text = "My favourite book is \"Harry Potter\". I love this book so much.";
+    let resultText1 = text.slice(3,35);
+    document.writeln(resultText1);
+    
+        let my = text.substr(0,2);
+        let bookIs = text.substr(12, 9);
+        let love = text.substr(39,4);
+    let resultText2 = my + bookIs + love
+        document.writeln(resultText2);
+        let HarryPotter = text.slice(21,35);
+        let resultText3 = my + bookIs + HarryPotter.toLocaleUpperCase();
+        document.writeln(resultText3);
+        let harry = HarryPotter.slice(1,6);
+        let potter = HarryPotter.slice(-7,-1);
+        let resultText4 = potter.toLowerCase() + harry.toLowerCase();
+        document.writeln(resultText4);
+    </script>
+</body>
+</html>
+<!-- 
+resultText1: favourite book is “Harry Potter”
+resultText2: My book is love.
+resultText3: My book is “HARRY POTTER”.
+resultText4: potter harry -->
+
+<!-- https://www.youtube.com/watch?v=icyMnovRgig&list=PLZ80tPjjho5VYEWplPzEpBjQcI7evMOey&index=3 -->

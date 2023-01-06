@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hello World!</p>
+    <script>
+        document.getElementById("p1").style.backgroundColor = "red";
+        // setInterval(() => document.getElementById("p1").style.backgroundColor = "green";
+
+        const myInterval = setInterval(setColor, 5000);
+
+function setColor() {
+  let x = document.getElementById("p1");
+  x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "green" : "yellow";
+}
+
+function stopColor() {
+  clearInterval(myInterval);
+}
+    </script>
+</body>
+</html>
+
+<!-- https://www.w3schools.com/jsref/met_win_setinterval.asp -->

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Window Object</h1>
+        <h2>The resizeBy() Method</h2>
+        <p>Open a new window, and resize it to 300 x 300:</p>
+        <button onclick="openWin()">Create window</button>
+        <button onclick="resizeWin()">Resize window</button>
+        <script>
+            let myWindow;
+            function openWin() {
+                myWindow = window.open("", "", "width=300, height=100");
+                // window.open(URL, name, specs, replace)
+            }
+            function resizeWin() {
+                myWindow.resizeTo(300, 300);
+            }
+        </script>
+    </body>
+</html>

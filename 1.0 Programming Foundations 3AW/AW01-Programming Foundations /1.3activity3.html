@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let color1 = [prompt("What's the first color?")];
+        let color2 = [prompt("What's the second color?")];
+        let color3 = [prompt("What's the third color?")];
+        
+        const array = [color1, ...color2, ...color3];
+        let arrayOne = array.toUpperCase();
+        console.log(array);
+    </script>
+</body>
+</html>
+
+
+<!-- With the use of prompts, ask the user about three colours. 
+    Create an array containing all of them. 
+    Print an array containing all the colours’ names but written in capital letters in the console. 
+    We can use the toUpperCase() method to write a string in capital letters. -->

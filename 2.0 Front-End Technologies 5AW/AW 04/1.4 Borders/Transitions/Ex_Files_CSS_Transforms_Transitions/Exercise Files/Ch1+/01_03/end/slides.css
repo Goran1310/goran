@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+div#slidecontainer figure {left: 0px;}
+div#slidecontainer:hover figure {left: 400px;}
+
+div#slidecontainer figure#slide1 {
+	z-index: 8;
+	transition: left 2s, z-index 2s step-end;		
+}
+
+div#slidecontainer figure#slide2 {
+	z-index: 7;
+	transition: left 2s 2s, z-index 2s step-end 1s;		
+}
+
+div#slidecontainer figure#slide3 {
+	z-index: 6;
+	transition: left 2s 2s, z-index 2s step-end 2s;		
+}
+
+div#slidecontainer figure#slide4 {
+	z-index: 5;
+	transition: left 2s 6s, z-index 2s step-end 6s;		
+}
+
+div#slidecontainer:hover figure#slide4 {z-index: 1;}
+div#slidecontainer:hover figure#slide3 {z-index: 2;}
+div#slidecontainer:hover figure#slide2 {z-index: 3;}
+div#slidecontainer:hover figure#slide1 {z-index: 4;}

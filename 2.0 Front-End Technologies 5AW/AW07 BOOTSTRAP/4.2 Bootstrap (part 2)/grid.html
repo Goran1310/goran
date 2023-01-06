@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col bg-secondary">
+            1 of 2
+          </div>
+          <div class="col bg-primary">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-secondary">
+            1 of 3
+          </div>
+          <div class="col bg-success">
+            2 of 3
+          </div>
+          <div class="col bg-primary">
+            3 of 3
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-2 bg-secondary">
+            1 of 2
+          </div>
+          <div class="col-10 bg-primary">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-secondary">
+            1 of 3
+          </div>
+          <div class="col bg-success">
+            2 of 3
+          </div>
+          <div class="col bg-primary">
+            3 of 3
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- We can also make columns take more space only at specific screen size breakpoints with the col-{breakpoint}-{number} classes.
+Instead of creating numerous row elements, we can create one and specify the number of columns with the row-cols-{number} classes. We can also add a screen size breakpoint to it. Let’s look at an example with the number of columns changing with the screen size: -->
+
+      <div class="container">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="bg-warning col">Column</div>
+              <div class="bg-primary col">Column</div>
+              <div class="bg-danger col">Column</div>
+              <div class="bg-success col">Column</div>
+        </div>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="bg-warning col">
+            First, in DOM, no order applied
+          </div>
+          <div class="bg-primary col order-5">
+            Second in DOM, with a larger order
+          </div>
+          <div class="bg-success col order-12">
+            Third in DOM, with an order of 1
+          </div>
+        </div>
+        <br>
+        <div class="container-fluid bg-danger">
+            ...
+          </div>
+        <br>
+        <div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-md">100% wide until medium breakpoint</div>
+<div class="container-lg">100% wide until large breakpoint</div>
+<div class="container-xl">100% wide until extra large breakpoint</div>
+<div class="container-xxl">100% wide until extra extra large breakpoint</div>
+    </div>
+
+    <br>
+    <div class="d-flex flex-column-reverse mb-3">
+      <div class="p-2 bg-success">Flex item 1</div>
+      <div class="p-2 bg-success">Flex item 2</div>
+      <div class="p-2 bg-success">Flex item 3</div>
+    </div>
+    <div class="d-flex flex-row-reverse">
+      <div class="p-2 bg-success">Flex item 1</div>
+      <div class="p-2 bg-success">Flex item 2</div>
+      <div class="p-2 bg-success">Flex item 3</div>
+    </div>
+
+    <body>
+      <div class="d-flex justify-content-start">
+          <div class="p-2 bg-success">Flex item 1</div>
+          <div class="p-2 bg-success">Flex item 2</div>
+          <div class="p-2 bg-success">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-end">
+          <div class="p-2 bg-success">Flex item 1</div>
+          <div class="p-2 bg-success">Flex item 2</div>
+          <div class="p-2 bg-success">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-center">
+          <div class="p-2 bg-success">Flex item 1</div>
+          <div class="p-2 bg-success">Flex item 2</div>
+          <div class="p-2 bg-success">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-between">
+          <div class="p-2 bg-success">Flex item 1</div>
+          <div class="p-2 bg-success">Flex item 2</div>
+          <div class="p-2 bg-success">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-around">
+              <div class="p-2 bg-success">Flex item 1</div>
+          <div class="p-2 bg-success">Flex item 2</div>
+          <div class="p-2 bg-success">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-evenly">
+          <div class="p-2 bg-success">Flex item 1</div>
+          <div class="p-2 bg-success">Flex item 2</div>
+          <div class="p-2 bg-success">Flex item 3</div>
+      </div>
+      <div class="d-inline-flex p-2 bd-highlight bg-success">I'm an inline flexbox container!</div>
+      <div class="d-flex p-2 bd-highlight bg-danger">I'm a flexbox container!</div>
+  </body>
+</html>
