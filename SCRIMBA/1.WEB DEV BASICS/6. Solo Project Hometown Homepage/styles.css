@@ -1,0 +1,86 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    /* font-family: 'Orbitron', sans-serif; */
+    width: 720px;
+    text-align: center;
+    font-family: lft-etica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+img {
+    width: 100px;
+}
+.hero {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/NOR-2016-Frogner_Park-Vigeland_Installation-View_from_the_monolith.jpg/1280px-NOR-2016-Frogner_Park-Vigeland_Installation-View_from_the_monolith.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        width: 720px;
+        height: 343px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+}
+#hero {
+    font-size: 32px;
+    text-shadow: 0px 0px 13px black;
+    color:#FFFFFF;
+    padding: 25px 0 0 0;
+    /* background: #FFFFFF; */
+}
+#heroh {
+    font-size: 18px;
+    text-shadow: 0px 0px 13px black;
+    color:#FFFFFF;
+    /* background: #FFFFFF; */
+}
+.activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    overflow: hidden;
+}
+#activiti {
+    display: frlex;
+    flex-direction: column;
+
+}
+.activitiesHeading {
+    font-size: 16px;
+    max-width: 240px;
+}
+.activitiesDescript {
+    font-size: 12px;
+    max-width: 240px;
+    margin: 10px;
+}
+.activities img {
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 130.66px;
+    height: 130.66px;
+}
+#guide {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/16/Frogner_Park_with_Vigeland_Sculpture_Arrangement.jpg");
+    background-size: cover;
+    /* opacity: 30%; */
+    min-height: 300px;
+}
+.guideimg {
+    border: solid 3px white;
+    /* width: 130.66px; */
+    /* height: 130.66px; */
+    background-size: cover;
+    overflow: hidden;
+}

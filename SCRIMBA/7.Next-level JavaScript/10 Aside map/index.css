@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.box{
+    border: 3px solid midnightblue;
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    margin: 2px;
+}

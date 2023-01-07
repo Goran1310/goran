@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="jquery-3.6.0.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+    <link rel="stylesheet" href="index.css">
+    <!-- <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet"> -->
+
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="board-title-home">HOME</h3>
+                <div class="home-score-home">
+                    <p id="home-points-text">00</p>
+                </div>
+                <div class="add-points-btns-home">
+                    <button1 class="btn" id = "plus-one-point-home" onclick="addOne"><p class="buttonParagraph">+1</p></button1>
+                    <button2 class="btn" id = "plus-two-point-home" onclick="addTwo"><p class="buttonParagraph">+2</p></button2>
+                    <button3 class="btn" id = "plus-three-point-home" onclick="addThree"><p class="buttonParagraph">+3</p></button3>
+                </div>
+            </div>
+            <div>
+                <h3 class="board-title-guest">GUEST</h3>
+                <div class="home-score-guest">
+                    <p class="guest-points-text">100</p>
+                </div>
+                <div class="add-points-btns-guest">
+                    <button1 class="btn" id = "plus-one-point-guest" onclick="addOne"><p class="buttonParagraph">+1</p></button1>
+                    <button2 class="btn" id = "plus-two-point-guest" onclick="addTwo"><p class="buttonParagraph">+2</p></button2>
+                    <button3 class="btn" id = "plus-three-point-guest" onclick="addThree"><p class="buttonParagraph">+3</p></button3>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+
+    </body>
+</html>

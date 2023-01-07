@@ -1,0 +1,18 @@
+body {
+    letter-spacing: 4px;
+    background: whitesmoke;
+    color: #fafbf4;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    text-shadow: 0px 0px 1px black;
+    /*           ➡️   ⬇️  blur color */
+}
+
+/*
+Challenge:
+Try to achieve the shadow from the provided design.
+*/
