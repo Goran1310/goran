@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // In this lesson, we learned about functional programming basics.
+        // Using closures, you need to implement an object with one private property: “textToAdd”.
+        // Implement its getters and setters. The object should contain one function – generateText().
+        // This function should take a string parameter (for the sake of naming - variable x) and return a function that also takes a string parameter (variable y).
+
+        // The final function should return a string containing x at the beginning, textToAdd in between, and y at the end, as shown in an example below:
+        const TextGenerator = ({ textToAdd }) => {
+            var _textToAdd = textToAdd;
+            return {
+                generateText: x => y => x + _textToAdd + y,
+                setTextToAdd: newTextToAdd => _textToAdd = newTextToAdd,
+            }
+        }
+
+        const tg = TextGenerator({ textToAdd: '......' });
+        const fun = tg.generateText("First Text")
+        console.log(fun("Second Text"));
+        tg.setTextToAdd("___");
+        console.log(fun("Second Text"))
+
+    </script>
+</body>
+
+</html>

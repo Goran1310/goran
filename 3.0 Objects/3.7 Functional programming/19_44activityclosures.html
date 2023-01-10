@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const Student = ({ name, age, gender, university }) => {
+            var _name = name;
+            var _age = age;
+            var _gender = gender;
+            var _university = university
+
+            return {
+                getName: () => _name,
+                getAge: () => _age,
+                getGender: () => _gender,
+                getUniversity: () => _university,
+
+                setAge: newAge => _age = newAge,
+                setUniversity: newUniversity => _university = newUniversity,
+
+            };
+        }
+
+        const me = Student({ name: 'Mark', age: 22, gender: 'male', university: 'Oxford' });
+        console.log(me.getUniversity());
+        me.setUniversity("Cambridge");
+        console.log(me.getUniversity());
+        me.setAge("33");
+        console.log(me.getAge())
+
+    </script>
+</body>
+
+</html>
