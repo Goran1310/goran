@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Think about how to resolve the problem in the following line:
+        // functionsArray.forEach(func => number = func(number));
+
+        const getNumber = function (index, currentResult, array) {
+            if (index == 0) {
+                return array[index](currentResult)
+            }
+            return array[index](getNumber(index - 1, currentResult, array));
+        }
+        getNumber(functionsArray.length - 1, 10, functionsArray)
+
+        // Implement a function that returns a function adding a specified string to the input parameters.
+        const addString = y => x => x + y;
+        const add2 = addString("2");
+        const add3 = addString("3");
+        const add4 = addString("4")
+    </script>
+</body>
+
+</html>
+<!-- You've used 75% of included services for GitHub Codespaces Compute. Navigate to
+[github.com/codespaces](https://github.com/codespaces) where you can see a list of your codespaces, export un-pushed
+work to a branch, delete old codespaces, or set up a spending limit to keep working in Codespaces beyond the included
+free usage. For more information see "[Making the most of your included free Codespaces
+usage](https://github.com/community/community/discussions/39697)". -->
