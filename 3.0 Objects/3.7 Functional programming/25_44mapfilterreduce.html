@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // example of the map function.
+        const numbers = [1, 2, 5, 9, 12, 13, 15]
+
+        const tripledNumbers = numbers.map(x => x * 3); // [3, 6, 15, 27, 36]
+        const modifiedNumbers = numbers.map(x => x + 2).map(x => x * 2); // [6, 8, 14, 22, 28]
+        const tripledNumbers1 = tripledNumbers.map(x => x + 1);
+        const modifiedNumbers1 = modifiedNumbers.map(x => x + 1);
+
+        console.log(tripledNumbers)
+        console.log(modifiedNumbers)
+        console.log(tripledNumbers1)
+        console.log(modifiedNumbers1)
+
+        // filter function to get odd elements from the numbers array
+
+        const odd = numbers.filter(x => x % 2 == 1);
+        const even = numbers.filter(x => x % 2 == 0);
+        console.log(odd)
+        console.log(even)
+        const oddModified = numbers.map(x => x + 2).filter(x => x % 2 == 1);
+        const evenModified = numbers.map(x => x + 3).filter(x => x % 2 == 0);
+        console.log(oddModified)
+        console.log(evenModified)
+
+        // reduce function. This function is the hardest to learn but can be extremely powerful. 
+
+        // ALTERNATIV A: doesn’t align with functional programming principles because it modifies the number value. 
+        const double1 = x => x * 2;
+        const triple1 = x => x * 3;
+        const addFour1 = x => x + 4;
+        const subtractThree1 = x => x - 3;
+
+        const functionsArray1 = [
+            triple1,
+            addFour1,
+            subtractThree1,
+            double1,
+            Math.sqrt,
+        ];
+
+        var number1 = 10;
+
+        functionsArray1.forEach(func => number1 = func(number1));
+
+        console.log(number1); //7.87
+        // ALTERNATIV B: doesn’t align with functional programming principles because it modifies the number value. 
+
+        const double = x => x * 2;
+        const triple = x => x * 3;
+        const addFour = x => x + 4;
+        const subtractThree = x => x - 3;
+
+        const functionsArray = [
+            triple,
+            addFour,
+            subtractThree,
+            double,
+            Math.sqrt,
+        ];
+
+        const value = functionsArray.reduce((acc, func) => {
+            return func(acc)
+        }, 10);
+
+        console.log(value); //7.87
+
+    </script>
+</body>
+
+</html>
